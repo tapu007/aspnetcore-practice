@@ -3,3 +3,5 @@ This is a document for Practising Asp.net Core Classes.
 
 Today we are practicing on EF Core
 Md. Shirajul Islam Mamun
+Kayser Ahmed
+
