@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorldMVCCore", "HelloW
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManagemetApp", "EmployeeManagemetApp\EmployeeManagemetApp.csproj", "{E4B4A5C4-5C13-45FF-BE0D-96F13311ECAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement.Models", "EmployeeManagement.Models\EmployeeManagement.Models.csproj", "{44B10334-6D49-406F-A77C-F0DF80A3F615}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManagement.Models", "EmployeeManagement.Models\EmployeeManagement.Models.csproj", "{44B10334-6D49-406F-A77C-F0DF80A3F615}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement.EFExamples", "EmployeeManagement.EFExamples\EmployeeManagement.EFExamples.csproj", "{4CC5ABC8-AA39-447A-86FB-C4512B4F86A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManagement.EFExamples", "EmployeeManagement.EFExamples\EmployeeManagement.EFExamples.csproj", "{4CC5ABC8-AA39-447A-86FB-C4512B4F86A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement.Repositories", "EmployeeManagement.Repositories\EmployeeManagement.Repositories.csproj", "{BF9441B9-B778-42BE-B0C9-06A1DDCA6929}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{4CC5ABC8-AA39-447A-86FB-C4512B4F86A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CC5ABC8-AA39-447A-86FB-C4512B4F86A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CC5ABC8-AA39-447A-86FB-C4512B4F86A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF9441B9-B778-42BE-B0C9-06A1DDCA6929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF9441B9-B778-42BE-B0C9-06A1DDCA6929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF9441B9-B778-42BE-B0C9-06A1DDCA6929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF9441B9-B778-42BE-B0C9-06A1DDCA6929}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

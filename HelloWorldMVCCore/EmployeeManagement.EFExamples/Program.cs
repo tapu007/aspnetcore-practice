@@ -2,6 +2,7 @@
 using System.Linq;
 using EmployeeManagement.Models.DatabaseContext;
 using EmployeeManagement.Models.EntityModels;
+using EmployeeManagement.Repositories.Repository;
 
 namespace EmployeeManagement.EFExamples
 {
@@ -9,26 +10,28 @@ namespace EmployeeManagement.EFExamples
     {
         static void Main(string[] args)
         { 
-            EmployeeDbContext db = new EmployeeDbContext();
-            var employee = db.Employees.FirstOrDefault(c => c.Id==3);
-            if (employee == null)
+          
+            EmployeeRepository repository = new EmployeeRepository(); 
+           
+            var employeeSearchCriteria = new Employee()
             {
-                Console.WriteLine("No Employee Found!");
+                Name="l",
+                RegNo = "1",
+              
+            };
+
+            var retrieveEmployees = repository.Search(employeeSearchCriteria);
+
+            if (!retrieveEmployees.Any())
+            {
+               Console.WriteLine("Not Found!");
                 Console.ReadKey();
                 return;
-                
             }
 
-            Console.WriteLine(employee.GetInfo());
 
-            Console.WriteLine("Please provide new Name:");
-            employee.Name = Console.ReadLine();
-
-            bool isSaved = db.SaveChanges() > 0;
-
-            if (isSaved)
-            {
-                Console.WriteLine("Saved Successful!");
+            foreach (var employee in retrieveEmployees)       {
+                Console.WriteLine(employee.Name);
             }
 
             Console.ReadKey();
