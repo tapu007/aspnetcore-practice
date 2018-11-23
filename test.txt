@@ -1,4 +1,6 @@
 This is a document for Practising Asp.net Core Classes. 
 23-11-2018
 
-Today we are practicing on EF Core
+Today we are practising on EF Core
+
+Kayser Ahmed
