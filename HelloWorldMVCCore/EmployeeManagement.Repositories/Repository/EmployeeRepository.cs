@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using EmployeeManagement.Models.DatabaseContext;
 using EmployeeManagement.Models.EntityModels;
 using Microsoft.EntityFrameworkCore;
 

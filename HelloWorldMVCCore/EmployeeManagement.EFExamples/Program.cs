@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using EmployeeManagement.Models.DatabaseContext;
 using EmployeeManagement.Models.EntityModels;
 using EmployeeManagement.Repositories.Repository;
 
